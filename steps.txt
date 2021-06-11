@@ -20,5 +20,5 @@ docker ps
 docker rm node-app -f
 #Terminal contenidor docker
 docker exec -it node-app bash
-
+#Crear .dockerignore
 
