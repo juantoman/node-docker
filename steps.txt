@@ -1,0 +1,24 @@
+mkdir node-image
+cd node-image
+npm init -y
+npm install express
+#Crear index.js i ficar codi
+#Executar aplicació
+node index.js
+#Crear Dockerfile i configurar
+#Crear Docker
+docker build -t node-app-image .
+#Llistar imatges
+docker image ls
+#Borrar imatges
+docker image rm <id>
+#Executar contenidor
+docker run -p 3000:3000 -d --name node-app node-app-image
+#Llistar contenidors executant-se
+docker ps
+#Borrar contenidor
+docker rm node-app -f
+#Terminal contenidor docker
+docker exec -it node-app bash
+
+
