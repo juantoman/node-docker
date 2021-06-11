@@ -21,4 +21,8 @@ docker rm node-app -f
 #Terminal contenidor docker
 docker exec -it node-app bash
 #Crear .dockerignore
+#Configurar contenidorper actualitzar amb desenvolupament
+docker run -v $PWD:/app -p 3000:3000 -d --name node-app node-app-image
+#Instal·las nodemon
+npm install nodemon --save-dev
 
